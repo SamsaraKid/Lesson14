@@ -30,11 +30,14 @@ function f1() {
     if ($('#restart_button').css('visibility') === 'visible') {
         f3()
         return
+    } else {
+        if ($('#dino').classList !== 'jump') {
+            $('#dino').addClass('jump')
+        }
+    setTimeout(function () {
+        $('#dino').removeClass('jump')
+        }, 700)
     }
-    if ($('#dino').classList !== 'jump') {
-        $('#dino').addClass('jump')
-    }
-    setTimeout(function (){$('#dino').removeClass('jump')},700)
 }
 
 function f2() {
@@ -89,7 +92,7 @@ function f3() {
         $('#jump').css('animation-play-state', 'running')
         $('#restart_button').css('visibility', 'hidden')
         fail = false
-    },10)
+    },1)
 }
 
 $(document).keydown(f1)
