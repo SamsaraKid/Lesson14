@@ -85,7 +85,7 @@ function f3() {
         $('#game').addClass('gamebganim')
         $('#ptero').addClass('pteroanim')
         $('#kaktus').addClass('kaktusanim')
-        $('#dino').addClass('jump')
+        // $('#dino').addClass('jump')
         $('#game').css('animation-play-state', 'running')
         $('#ptero').css('animation-play-state', 'running')
         $('#kaktus').css('animation-play-state', 'running')
