@@ -96,6 +96,7 @@ function f3() {
 }
 
 $(document).keydown(f1)
+$(document).on('tap',f1)
 setInterval(f2,10)
 setInterval(score_counter,100)
 // $('#restart_button').click(f3)
